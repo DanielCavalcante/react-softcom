@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Hello from './components/Hello'
 import Props from './components/Props'
 import DefaultProps from './components/DefaultProps'
+import Count from './components/Count'
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <Hello />
       <Props nomeEmpresa="Softcom" />
       <DefaultProps nomeEmpresa="Softcom" />
+      <Count />
     </div>
   );
 }
