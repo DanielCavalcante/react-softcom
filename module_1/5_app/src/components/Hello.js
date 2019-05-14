@@ -1,5 +1,5 @@
 import React from 'react'
 
-export default props => (
+export default () => (
   <h1>Olá Softcom</h1>
 )
