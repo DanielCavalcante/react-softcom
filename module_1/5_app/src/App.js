@@ -5,6 +5,7 @@ import Hello from './components/Hello'
 import Props from './components/Props'
 import DefaultProps from './components/DefaultProps'
 import Count from './components/Count'
+import { GrandFather } from './components/GrandFather'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Props nomeEmpresa="Softcom" />
       <DefaultProps nomeEmpresa="Softcom" />
       <Count />
+      <GrandFather name='Ronaldo' lastName='Nazario' />
     </div>
   );
 }
