@@ -8,6 +8,7 @@ import Count from './components/Count'
 import { GrandFather } from './components/GrandFather'
 import Square from './components/Square'
 import Button from './components/Children'
+import ChildrenComposto from './components/ChildrenComposto'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Square color={square} key={square} />
         ))}
       <Button>Varei</Button>
+      <ChildrenComposto />
     </div>
   );
 }
