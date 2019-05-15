@@ -9,6 +9,7 @@ import { GrandFather } from './components/GrandFather'
 import Square from './components/Square'
 import Button from './components/Children'
 import ChildrenComposto from './components/ChildrenComposto'
+import Stateless from './components/Stateless'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         ))}
       <Button>Varei</Button>
       <ChildrenComposto />
+      <Stateless />
     </div>
   );
 }
