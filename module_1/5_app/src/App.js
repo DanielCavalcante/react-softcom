@@ -7,6 +7,7 @@ import DefaultProps from './components/DefaultProps'
 import Count from './components/Count'
 import { GrandFather } from './components/GrandFather'
 import Square from './components/Square'
+import Button from './components/Children'
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
       <DefaultProps nomeEmpresa="Softcom" />
       <Count />
       <GrandFather name='Ronaldo' lastName='Nazario' />
-      {['blue', 'yellow', 'black', 'green'].map((square) => (
-        <Square color={square} key={square} />
-      ))}
+        {['blue', 'yellow', 'black', 'green'].map((square) => (
+          <Square color={square} key={square} />
+        ))}
+      <Button>Varei</Button>
     </div>
   );
 }
