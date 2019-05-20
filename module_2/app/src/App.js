@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Timer from './components/Timer'
+import SimpleForm from './components/SimpleForm'
 
 class App extends Component {
 
@@ -23,10 +24,11 @@ class App extends Component {
     console.log('Render App');
     return (
       <div>
-        <Timer timer={this.state.time} />
+        {/* <Timer timer={this.state.time} />
         <button onClick={() => {this.setState({ time: this.state.time + 10 })}}>
           Change Props
-        </button>
+        </button> */}
+        <SimpleForm />
       </div>
     );
   }
