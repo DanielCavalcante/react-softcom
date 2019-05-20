@@ -19,6 +19,9 @@ export default class SimpleForm extends Component {
         <br />
         <input type='checkbox' value='OK' checked={this.state.checked}
           onChange={(e) => {this.setState({ checked: e.target.checked })}} /> Checkbox
+        <br />
+        <input type='radio' name='radio' value='1' defaultChecked />1 
+        <input type='radio' name='radio' value='2' />2
       </form>
     )
   }
