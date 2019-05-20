@@ -29,6 +29,8 @@ export default class SimpleForm extends Component {
           <option value='2'>Opção 2</option>
           <option value='3'>Opção 3</option>
         </select>
+        <br />
+        <textarea defaultValue='Default Value' />
 
       </form>
     )
