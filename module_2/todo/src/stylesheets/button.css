@@ -1,3 +1,11 @@
 .btn {
-  margin-left: 10px;
+  margin-right: 5px;
+  float: left;
+}
+.markedAsDone {
+  text-decoration: line-through;
+  color: #777;
+}
+.tableActions {
+  width: 250px;
 }
