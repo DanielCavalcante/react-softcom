@@ -65,17 +65,16 @@ export default class Todo extends Component {
   render() {
     return (
       <div>
-      <h2 className='title'>Add Todo</h2>
-      <TodoForm 
-        description={this.state.description} 
-        handleAdd={this.handleAdd}
-        handleChange={this.handleChange} 
-        handleSearch={this.handleSearch} />
-      <TodoList todos={this.state.todos}
-        handleRemove={this.handleRemove}
-        handleMarkAsDone={this.handleMarkAsDone}
-        handleMarkAsPending={this.handleMarkAsPending}>
-      </TodoList>
+        <TodoForm 
+          description={this.state.description} 
+          handleAdd={this.handleAdd}
+          handleChange={this.handleChange} 
+          handleSearch={this.handleSearch} />
+        <TodoList todos={this.state.todos}
+          handleRemove={this.handleRemove}
+          handleMarkAsDone={this.handleMarkAsDone}
+          handleMarkAsPending={this.handleMarkAsPending}>
+        </TodoList>
       </div>
     )
   }
