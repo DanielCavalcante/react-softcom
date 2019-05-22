@@ -4,7 +4,7 @@ import IconButton from '../utils/IconButton'
 
 export default props => (
   <div className='row'>
-    <Grid cols='10 8 8'>
+    <Grid cols='12 10 10 10'>
       <input 
         id='description' 
         className='form-control' 
@@ -13,8 +13,8 @@ export default props => (
         onChange={props.handleChange} />
     </Grid>
     <Grid cols='1'>
-      <IconButton style='primary' text='Adicionar' icon='plus' onClick={props.handleAdd} />
-      <IconButton style='info' text='Pesquisar' icon='search' onClick={props.handleSearch} />
+      <IconButton style='warning' text='Adicionar' icon='plus' onClick={props.handleAdd} />
+      <IconButton style='dark' text='Pesquisar' icon='search' onClick={props.handleSearch} />
     </Grid>
   </div>
 )
