@@ -1,4 +1,6 @@
-const webpack = require('webpack');
+const webpack = require('webpack')
+const path = require('path')
+const HtmlPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -20,15 +22,21 @@ module.exports = {
     extensions: ['*', '.js', '.jsx']
   },
   output: {
-    path: __dirname + '/dist',
-    publicPath: '/',
-    filename: 'bundle.js'
+    path: path.join(__dirname, 'dist'),
+    publicPath: '',
+    filename: '[name]-[hash].js'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlPlugin(
+      {
+        title: 'Webpack App Scaffold',
+        template: path.join(__dirname, 'dist', 'template.html')
+      }
+    )
   ],
   devServer: {
     contentBase: './dist',
     hot: true
   }
-};
+}
